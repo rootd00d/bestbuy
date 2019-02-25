@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Casey Billett <cbillett@xyu.ca> (http://caseyb.info)",
+  "license": "Unlicense",
+  "scripts": {
+    "start": "node bestbuy.ca.js",
+    "debug-docker": "nodemon --legacy-watch --watch /usr/src/app --inspect=0.0.0.0:9229 --nolazy bestbuy.ca.js",
+    "debug-local": "nodemon --legacy-watch --watch /usr/src/app --nolazy bestbuy.ca.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "nconf": "^0.10.0"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "supertest": "^3.4.2"
+  }
+}
